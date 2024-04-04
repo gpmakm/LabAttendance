@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>OS </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        main{
+            display: flex;
+            justify-content: center;
+            width: 95vw;
+            height: 100vh;
+        }
+        form{
+            width: 50vw;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        span{
+            color: white;
+        }
+input{
+    width: 50vw;
+    height: 6vh;
+}
+button{
+    margin-top: 2vh;
+    color: white;
+    background-color: darkred;
+    border-radius: 25px;
+}
+p{
+    font-family: cursive;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+<span>        The Era Engineers
+</span>      </nav>
+<p>Welcome to Modern and Digital Attendance Form by <u>The Era Engineers</u></p>
+      <main>
+        <form action="/os" method="post">
+            <label for="name">Name</label>
+            <div>
+                <input type="text" name="uname" id="name">
+            </div>
+            <label for="regno">Registration number</label>
+            <div>
+                <input type="number" name="regno" id="regno">
+            </div>
+            <label for="name">Board Roll Number</label>
+            <div>
+                <input type="number" name="rollno" id="rollno">
+            </div>
+            <button id="btn">Submit</button>
+        </form>
+      </main>
+</body>
+<script>
+    let uname=document.getElementById('name');
+    let btn=document.getElementById('btn')
+    uname.addEventListener('keyup',()=>{
+        uname.style.textTransform="Capitalize";
+    })
+</script>
+</html>
