@@ -1,0 +1,16 @@
+{
+    "version":2,
+    "builds":[
+        {
+            "src":"./dsaserver.js",
+            "use":"@vercel/node"
+        }
+    ],
+    "routes":[
+        {
+            "src":"./dsaserver.js",
+            "dest":"/"
+        }
+    ]
+    
+}
